@@ -1,0 +1,148 @@
+:root {
+    --color-primario: #EAF2F8;
+    --color-texto: #1D2D44;
+    --color-footer: #3E5C76;
+    --titulo-font: "Fascinate Inline", system-ui;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+}
+
+main {
+    background-color: var(--color-primario);
+    margin: 0;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+main img {
+    width: 10rem;
+    max-width: 100%;
+    height: auto;
+}
+
+footer {
+    background-color: var(--color-texto);
+    color: var(--color-primario);
+    margin: 0;
+    padding: 1rem 2rem;
+}
+
+footer a {
+    color: var(--color-primario);
+}
+
+h1,
+h2,
+h3 {
+    font-family: var(--titulo-font);
+    color: var(--color-texto);
+}
+
+ul {
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+}
+
+ul a {
+    text-decoration: none;
+    color: var(--color-primario);
+}
+
+header {
+    background-color: var(--color-texto);
+    display: flex;
+    justify-content: right;
+    align-items: center;
+}
+
+nav {
+    margin-right: 2rem;
+}
+
+#presentacion {
+    padding-top: 1rem;
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+
+
+}
+
+#presentacion img {
+    width: 10rem;
+    border-radius: 1rem;
+    box-shadow: var(--color-texto) 1rem 1rem;
+}
+
+#presentacion h1 {
+    box-shadow: var(--color-texto) 1rem 1rem;
+}
+
+#presentacion div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#presentacion div:hover {
+    scale: 1.1;
+}
+
+table {
+    border: var(--color-footer) 0.2rem solid;
+}
+
+.tablas-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+
+}
+
+ol  {
+    list-style: none;
+}
+
+#formulario-reservas {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+form {
+    display: flex;
+    width: 20rem;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+form div {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+form button {
+    margin-top: 0.5rem;
+    background-color: var(--color-texto);
+    color: var(--color-primario);
+
+}
